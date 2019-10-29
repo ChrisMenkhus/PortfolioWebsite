@@ -1,0 +1,15 @@
+{
+  "name": "practice_npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "bootstrap": "^4.3.1"
+  }
+}
