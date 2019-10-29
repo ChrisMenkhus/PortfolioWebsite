@@ -9,6 +9,12 @@ body {
 	color: #777;
 }
 
+@media screen and (max-width: 300px) {
+	body {
+		font-size: 3em;
+	}
+}
+
 /*-------- Generics -------*/
 
 /*text colors*/
@@ -76,16 +82,28 @@ button a:hover {
 /* Navigation Bar */
 .nav {
 	background-color: white;
-	z-index: 10;
+	z-index: 2;
 	width: 100%;
 	position: absolute;
-	top: 90%;
+	top: 94%;
+}
+@media screen and (min-width: 300px) {
+	.nav {
+		font-size: 1.2em;
+	}
+	.nav-link {
+		padding: 0px;
+	}
 }
 
 .sticky {
 	position: fixed;
 	top: 0;
 	border-bottom: 4px solid #0280b1;
+}
+
+.sticky .nav-link {
+	border-bottom: 0px;
 }
 
 .nav-link {
@@ -117,10 +135,10 @@ button a:hover {
 	font-weight: lighter;
 	text-align: center;
 }
-
 @media screen and (min-width: 300px) {
-	h1 {
-		font-size: 1.7em;
+	.titlepage {
+		text-align: left;
+		font-size: 0.8em;
 	}
 }
 
@@ -160,7 +178,7 @@ button a:hover {
 	justify-content: center;
 	color: white;
 	background: rgb(2,128,177);
-	height: 30%;
+
 	padding: 50px;
 }
 
@@ -201,4 +219,12 @@ footer {
 	border: 1px solid white;
 	border-bottom: 3px solid #0280b1;
 	font-size: 2em;
+}
+
+img {
+	height: 50px;
+	fill: #0280b1;
+	position: fixed;
+	bottom: 50;
+	
 }
