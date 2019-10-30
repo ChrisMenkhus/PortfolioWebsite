@@ -81,14 +81,43 @@ button a:hover {
 
 /* Navigation Bar */
 .nav {
+	display: flex;
+	list-style: none;
+}
+
+/*
+
+	list-style: none;
 	background-color: white;
 	z-index: 2;
 	width: 100%;
 	position: absolute;
-	top: 94%;
+	top: 0;
+
+*/
+
+/* https://www.freecodecamp.org/news/how-to-build-a-responsive-navbar-with-a-toggle-menu-using-flexbox-3438e1d08783/   */
+
+
+.navbar {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+	background-color: white;
+}
+
+.nav-items {
+	display: flex;
+}
+
+.navbar-items-right {
+	margin-left: auto;
+	
 }
 @media screen and (min-width: 300px) {
-	.nav {
+	.navbar {
 		font-size: 1.2em;
 	}
 	.nav-link {
@@ -111,6 +140,7 @@ button a:hover {
 	border-bottom: 1px solid #0280b1;
 	margin: 10px;
 	padding-bottom: 0px;
+	text-decoration: none;
 }
 
 .nav-link:hover {
@@ -125,6 +155,10 @@ button a:hover {
 .disabled {
 	color: #f2f2f2;
 }
+
+
+/* mobile friendly nav */
+
 
 /* Title page */
 .titlepage {

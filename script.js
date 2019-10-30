@@ -1,4 +1,4 @@
-let nav = document.querySelector('.nav');
+let nav = document.querySelector('.navbar');
 
 let sticky = nav.offsetTop + 0;
 
@@ -8,4 +8,4 @@ stickyNav = () => {
 	nav.classList.remove(`sticky`);
 }
 
-window.onscroll = function() { stickyNav() };
+ //window.onscroll = function() { stickyNav() };
